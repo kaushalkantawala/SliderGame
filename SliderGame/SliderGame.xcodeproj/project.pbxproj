@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E11E975F14F9AAEB00F1E2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11E975E14F9AAEB00F1E2AA /* UIKit.framework */; };
+		E11E976114F9AAEB00F1E2AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11E976014F9AAEB00F1E2AA /* Foundation.framework */; };
+		E11E976314F9AAEB00F1E2AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11E976214F9AAEB00F1E2AA /* CoreGraphics.framework */; };
+		E11E976914F9AAEB00F1E2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E11E976714F9AAEB00F1E2AA /* InfoPlist.strings */; };
+		E11E976B14F9AAEB00F1E2AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E976A14F9AAEB00F1E2AA /* main.m */; };
+		E11E976F14F9AAEB00F1E2AA /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E11E975A14F9AAEB00F1E2AA /* SliderGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11E975E14F9AAEB00F1E2AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E11E976014F9AAEB00F1E2AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E11E976214F9AAEB00F1E2AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E11E976614F9AAEB00F1E2AA /* SliderGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SliderGame-Info.plist"; sourceTree = "<group>"; };
+		E11E976814F9AAEB00F1E2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E11E976A14F9AAEB00F1E2AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E11E976C14F9AAEB00F1E2AA /* SliderGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SliderGame-Prefix.pch"; sourceTree = "<group>"; };
+		E11E976D14F9AAEB00F1E2AA /* KKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11E975714F9AAEB00F1E2AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E975F14F9AAEB00F1E2AA /* UIKit.framework in Frameworks */,
+				E11E976114F9AAEB00F1E2AA /* Foundation.framework in Frameworks */,
+				E11E976314F9AAEB00F1E2AA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E11E974F14F9AAEB00F1E2AA = {
+			isa = PBXGroup;
+			children = (
+				E11E976414F9AAEB00F1E2AA /* SliderGame */,
+				E11E975D14F9AAEB00F1E2AA /* Frameworks */,
+				E11E975B14F9AAEB00F1E2AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11E975B14F9AAEB00F1E2AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11E975A14F9AAEB00F1E2AA /* SliderGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11E975D14F9AAEB00F1E2AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11E975E14F9AAEB00F1E2AA /* UIKit.framework */,
+				E11E976014F9AAEB00F1E2AA /* Foundation.framework */,
+				E11E976214F9AAEB00F1E2AA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11E976414F9AAEB00F1E2AA /* SliderGame */ = {
+			isa = PBXGroup;
+			children = (
+				E11E976D14F9AAEB00F1E2AA /* KKAppDelegate.h */,
+				E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */,
+				E11E976514F9AAEB00F1E2AA /* Supporting Files */,
+			);
+			path = SliderGame;
+			sourceTree = "<group>";
+		};
+		E11E976514F9AAEB00F1E2AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E11E976614F9AAEB00F1E2AA /* SliderGame-Info.plist */,
+				E11E976714F9AAEB00F1E2AA /* InfoPlist.strings */,
+				E11E976A14F9AAEB00F1E2AA /* main.m */,
+				E11E976C14F9AAEB00F1E2AA /* SliderGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11E975914F9AAEB00F1E2AA /* SliderGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11E977214F9AAEB00F1E2AA /* Build configuration list for PBXNativeTarget "SliderGame" */;
+			buildPhases = (
+				E11E975614F9AAEB00F1E2AA /* Sources */,
+				E11E975714F9AAEB00F1E2AA /* Frameworks */,
+				E11E975814F9AAEB00F1E2AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliderGame;
+			productName = SliderGame;
+			productReference = E11E975A14F9AAEB00F1E2AA /* SliderGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11E975114F9AAEB00F1E2AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E11E975414F9AAEB00F1E2AA /* Build configuration list for PBXProject "SliderGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E11E974F14F9AAEB00F1E2AA;
+			productRefGroup = E11E975B14F9AAEB00F1E2AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11E975914F9AAEB00F1E2AA /* SliderGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11E975814F9AAEB00F1E2AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E976914F9AAEB00F1E2AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11E975614F9AAEB00F1E2AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11E976B14F9AAEB00F1E2AA /* main.m in Sources */,
+				E11E976F14F9AAEB00F1E2AA /* KKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E11E976714F9AAEB00F1E2AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11E976814F9AAEB00F1E2AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11E977014F9AAEB00F1E2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11E977114F9AAEB00F1E2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11E977314F9AAEB00F1E2AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SliderGame/SliderGame-Prefix.pch";
+				INFOPLIST_FILE = "SliderGame/SliderGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E11E977414F9AAEB00F1E2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SliderGame/SliderGame-Prefix.pch";
+				INFOPLIST_FILE = "SliderGame/SliderGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11E975414F9AAEB00F1E2AA /* Build configuration list for PBXProject "SliderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11E977014F9AAEB00F1E2AA /* Debug */,
+				E11E977114F9AAEB00F1E2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11E977214F9AAEB00F1E2AA /* Build configuration list for PBXNativeTarget "SliderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11E977314F9AAEB00F1E2AA /* Debug */,
+				E11E977414F9AAEB00F1E2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11E975114F9AAEB00F1E2AA /* Project object */;
+}
