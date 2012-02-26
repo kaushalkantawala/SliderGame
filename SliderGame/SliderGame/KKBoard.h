@@ -12,15 +12,20 @@
 @interface KKBoard : UIViewController
 {
     NSMutableArray* pieceViews;
-    NSMutableArray* positions;
-    NSMutableArray* pieces;
+    NSMutableDictionary* pieces;
 }
 
 @property (nonatomic, retain) NSMutableArray* pieceViews;
-@property (nonatomic, retain) NSMutableArray* pieces;
-@property (nonatomic, retain) NSMutableArray* positions;
+@property (nonatomic, retain) NSMutableDictionary* pieces;
+
 
 +(KKBoard *) sharedInstance;
-
+- (void) shuffleBoard;
+- (void) updatePositions;
+- (void) checkCompletion;
+- (NSMutableArray *) verticalMovablePieces;
+- (NSMutableArray *) horizontalMovablePieces;
+- (void) printPositions;
+- (void) tap:(UITapGestureRecognizer *)sender;
 
 @end

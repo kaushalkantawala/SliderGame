@@ -9,13 +9,92 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "351921315.352884"
+         timestampString = "351949705.362976"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
          landmarkName = "-loadView"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "351949947.092859"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "174"
+         endingLineNumber = "174"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "351950994.318073"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "150"
+         endingLineNumber = "150"
+         landmarkName = "-updatePositions"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "351949705.362976"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
+         landmarkName = "-shuffleBoard"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "351949705.362976"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "162"
+         endingLineNumber = "162"
+         landmarkName = "-printPositions"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "351949705.362976"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
+         landmarkName = "-initWithNibName:bundle:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
+   <ExceptionBreakpoints>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "0">
+      </ExceptionBreakpoint>
+   </ExceptionBreakpoints>
 </Bucket>

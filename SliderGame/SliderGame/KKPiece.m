@@ -11,10 +11,11 @@
 @implementation KKPiece
 
 @synthesize ID;
-@synthesize originalImageX;
-@synthesize originalImageY;
-@synthesize width;
-@synthesize height;
+//@synthesize originalImageX;
+//@synthesize originalImageY;
+//@synthesize width;
+//@synthesize height;
 @synthesize boardPosition;
+@synthesize tile;
 
 @end

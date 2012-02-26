@@ -11,19 +11,20 @@
 @interface KKPiece : NSObject
 {
     int ID;
-    float originalImageX;
-    float originalImageY;
-    float width;
-    float height;
-    float boardPosition;
+//    float originalImageX;
+//    float originalImageY;
+//    float width;
+//    float height;
+    int boardPosition;
+    UIImageView* tile;
     
 }
 
 @property (nonatomic, assign) int ID;
-@property (nonatomic, assign) float originalImageX;
-@property (nonatomic, assign) float originalImageY;
-@property (nonatomic, assign) float width;
-@property (nonatomic, assign) float height;
-@property (nonatomic, assign) float boardPosition;
-
+//@property (nonatomic, assign) float originalImageX;
+//@property (nonatomic, assign) float originalImageY;
+//@property (nonatomic, assign) float width;
+//@property (nonatomic, assign) float height;
+@property (nonatomic, assign) int boardPosition;
+@property (nonatomic, retain) UIImageView* tile;
 @end
