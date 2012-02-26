@@ -13,6 +13,12 @@
 		E11E976914F9AAEB00F1E2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E11E976714F9AAEB00F1E2AA /* InfoPlist.strings */; };
 		E11E976B14F9AAEB00F1E2AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E976A14F9AAEB00F1E2AA /* main.m */; };
 		E11E976F14F9AAEB00F1E2AA /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */; };
+		E11E977914F9ACD500F1E2AA /* KKSplitImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E977714F9ACD500F1E2AA /* KKSplitImage.m */; };
+		E11E977A14F9ACD500F1E2AA /* KKSplitImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11E977814F9ACD500F1E2AA /* KKSplitImage.xib */; };
+		E11E977C14F9AE7900F1E2AA /* UIE_Slider_Puzzle--globe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E11E977B14F9AE7900F1E2AA /* UIE_Slider_Puzzle--globe.jpg */; };
+		E11E979314F9D56A00F1E2AA /* KKPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E979214F9D56A00F1E2AA /* KKPiece.m */; };
+		E11E979614F9D6AF00F1E2AA /* KKBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = E11E979514F9D6AF00F1E2AA /* KKBoard.m */; };
+		E11E979814F9D78700F1E2AA /* KKBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11E979714F9D78700F1E2AA /* KKBoard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		E11E976C14F9AAEB00F1E2AA /* SliderGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SliderGame-Prefix.pch"; sourceTree = "<group>"; };
 		E11E976D14F9AAEB00F1E2AA /* KKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
 		E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		E11E977614F9ACD500F1E2AA /* KKSplitImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSplitImage.h; sourceTree = "<group>"; };
+		E11E977714F9ACD500F1E2AA /* KKSplitImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSplitImage.m; sourceTree = "<group>"; };
+		E11E977814F9ACD500F1E2AA /* KKSplitImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKSplitImage.xib; sourceTree = "<group>"; };
+		E11E977B14F9AE7900F1E2AA /* UIE_Slider_Puzzle--globe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UIE_Slider_Puzzle--globe.jpg"; sourceTree = "<group>"; };
+		E11E979114F9D56A00F1E2AA /* KKPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPiece.h; sourceTree = "<group>"; };
+		E11E979214F9D56A00F1E2AA /* KKPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPiece.m; sourceTree = "<group>"; };
+		E11E979414F9D6AF00F1E2AA /* KKBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBoard.h; sourceTree = "<group>"; };
+		E11E979514F9D6AF00F1E2AA /* KKBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBoard.m; sourceTree = "<group>"; };
+		E11E979714F9D78700F1E2AA /* KKBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKBoard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +87,7 @@
 		E11E976414F9AAEB00F1E2AA /* SliderGame */ = {
 			isa = PBXGroup;
 			children = (
+				E11E977514F9AC4F00F1E2AA /* Game */,
 				E11E976D14F9AAEB00F1E2AA /* KKAppDelegate.h */,
 				E11E976E14F9AAEB00F1E2AA /* KKAppDelegate.m */,
 				E11E976514F9AAEB00F1E2AA /* Supporting Files */,
@@ -82,12 +98,28 @@
 		E11E976514F9AAEB00F1E2AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E11E977B14F9AE7900F1E2AA /* UIE_Slider_Puzzle--globe.jpg */,
 				E11E976614F9AAEB00F1E2AA /* SliderGame-Info.plist */,
 				E11E976714F9AAEB00F1E2AA /* InfoPlist.strings */,
 				E11E976A14F9AAEB00F1E2AA /* main.m */,
 				E11E976C14F9AAEB00F1E2AA /* SliderGame-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E11E977514F9AC4F00F1E2AA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E11E977614F9ACD500F1E2AA /* KKSplitImage.h */,
+				E11E977714F9ACD500F1E2AA /* KKSplitImage.m */,
+				E11E977814F9ACD500F1E2AA /* KKSplitImage.xib */,
+				E11E979114F9D56A00F1E2AA /* KKPiece.h */,
+				E11E979214F9D56A00F1E2AA /* KKPiece.m */,
+				E11E979414F9D6AF00F1E2AA /* KKBoard.h */,
+				E11E979514F9D6AF00F1E2AA /* KKBoard.m */,
+				E11E979714F9D78700F1E2AA /* KKBoard.xib */,
+			);
+			name = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11E976914F9AAEB00F1E2AA /* InfoPlist.strings in Resources */,
+				E11E977A14F9ACD500F1E2AA /* KKSplitImage.xib in Resources */,
+				E11E977C14F9AE7900F1E2AA /* UIE_Slider_Puzzle--globe.jpg in Resources */,
+				E11E979814F9D78700F1E2AA /* KKBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +188,9 @@
 			files = (
 				E11E976B14F9AAEB00F1E2AA /* main.m in Sources */,
 				E11E976F14F9AAEB00F1E2AA /* KKAppDelegate.m in Sources */,
+				E11E977914F9ACD500F1E2AA /* KKSplitImage.m in Sources */,
+				E11E979314F9D56A00F1E2AA /* KKPiece.m in Sources */,
+				E11E979614F9D6AF00F1E2AA /* KKBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +213,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -201,7 +239,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
