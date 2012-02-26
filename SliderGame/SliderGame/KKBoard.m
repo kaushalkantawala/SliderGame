@@ -53,7 +53,7 @@
 #pragma mark - View lifecycle
 -(void) loadView
 {
-    UIView *root = [[UIView alloc] initWithFrame:CGRectMake(40, 40, 640, 640)];
+    UIView *root = [[UIView alloc] initWithFrame:CGRectMake(40, 40, 650, 650)];
     root.backgroundColor = [UIColor darkGrayColor];
     UIImage* whole = [UIImage imageNamed:@"UIE_Slider_Puzzle--globe.jpg"];
     int partId = 0;
@@ -64,7 +64,7 @@
             UIImage* part = [UIImage imageWithCGImage:cgImg];
 //            UIImageView* iv = [[UIImageView alloc] initWithImage:part];
             
-            UIImageView* sView = [[UIImageView alloc] initWithFrame:CGRectMake((partId%4 * 160), (partId/4 * 160), 160, 160)];
+            UIImageView* sView = [[UIImageView alloc] initWithFrame:CGRectMake((partId%4 * 162), (partId/4 * 162), 160, 160)];
             sView.image = part;
             sView.contentMode = UIViewContentModeScaleAspectFit;
 //            [sView addSubview:iv];
