@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "352024615.826536"
+         timestampString = "352028026.72762"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "218"
-         endingLineNumber = "218"
+         startingLineNumber = "277"
+         endingLineNumber = "277"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "352024615.826536"
+         timestampString = "352028026.72762"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "194"
-         endingLineNumber = "194"
+         startingLineNumber = "253"
+         endingLineNumber = "253"
          landmarkName = "-updatePositions"
          landmarkType = "5">
       </FileBreakpoint>
@@ -79,11 +79,39 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "352023470.590522"
+         timestampString = "352028026.72762"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "142"
-         endingLineNumber = "142"
+         startingLineNumber = "146"
+         endingLineNumber = "146"
+         landmarkName = "-tryToMove:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "352028077.909654"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "148"
+         endingLineNumber = "148"
+         landmarkName = "-tryToMove:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "SliderGame/KKBoard.m"
+         timestampString = "352028127.495975"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "141"
+         endingLineNumber = "141"
          landmarkName = "-tap:"
          landmarkType = "5">
       </FileBreakpoint>

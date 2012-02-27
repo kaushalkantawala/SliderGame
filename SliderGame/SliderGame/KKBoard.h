@@ -37,5 +37,7 @@ typedef enum
 - (void) tap:(UITapGestureRecognizer *)sender;
 - (int) directionAvailableForMove:(UIImageView *) tile;
 - (void) moveTile:(UIImageView *) tile inDirection: (int) direction;
+- (void) tryToMove:(UIImageView*) tile;
+
 
 @end

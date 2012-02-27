@@ -139,10 +139,70 @@ static int positions[16] = {-1};
 - (void) tap:(UITapGestureRecognizer *)sender
 {
     NSLog(@"Image View Tag: %d",sender.view.tag);
-    int directionFree = [self directionAvailableForMove:(UIImageView*)[sender view]];
+    [self tryToMove:(UIImageView*)sender.view];
+    
+}
+    
+- (void) tryToMove:(UIImageView*) tile
+{
+    int directionFree = [self directionAvailableForMove:tile];
+    int tileID = tile.tag;
+    int tilePosition = ((KKPiece*)[pieces objectForKey:[NSString stringWithFormat:@"%d",tileID]]).boardPosition;
     NSLog(@"Open Spot is %d",directionFree);
+//    Move a tile if it is next to a blank spot
     if (directionFree != 0)
-        [self moveTile:(UIImageView*)[sender view] inDirection:directionFree];
+        [self moveTile:tile inDirection:directionFree];
+//    We want to try to move a row of tiles if a blank exists in that row
+    else
+    {
+//        Search tiles to the left
+        if ((tilePosition - 1)%4 > 0)
+        {
+            [self tryToMove:[pieceViews objectAtIndex:(tilePosition - 2)]];
+            directionFree = [self directionAvailableForMove:tile];
+            if (directionFree == 1)
+            {
+                [self moveTile:tile inDirection:directionFree];
+                return;
+            }
+        }
+//        Search tiles upwards
+        if (tilePosition / 4 > 0)
+        {
+            [self tryToMove:[pieceViews objectAtIndex:(tilePosition - 5)]];
+            directionFree = [self directionAvailableForMove:tile];
+            if (directionFree == 2)
+            {
+                [self moveTile:tile inDirection:directionFree];
+                return;
+            }
+        }
+        
+//        Search tiles to the right
+
+        if (tilePosition / 4 != 0)
+        {
+            [self tryToMove:[pieceViews objectAtIndex:tilePosition]];
+            directionFree = [self directionAvailableForMove:tile];
+            if (directionFree == 3)
+            {
+                [self moveTile:tile inDirection:directionFree];
+                return;
+            }
+        }
+        
+//        Search tiles downwards
+        if ((tilePosition-1) / 12 < 1)
+        {
+            [self tryToMove:[pieceViews objectAtIndex:(tilePosition + 3)]];
+            directionFree = [self directionAvailableForMove:tile];
+            if (directionFree == 4)
+            {
+                [self moveTile:tile inDirection:directionFree];
+                return;
+            }
+        }
+    }
 }
 
 - (int) directionAvailableForMove:(UIImageView *)tile
@@ -164,7 +224,6 @@ static int positions[16] = {-1};
         default: return 0;
         
     }
-    
     
 }
 
