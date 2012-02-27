@@ -23,25 +23,25 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "351949947.092859"
+         timestampString = "352024615.826536"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
+         startingLineNumber = "218"
+         endingLineNumber = "218"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "351950994.318073"
+         timestampString = "352024615.826536"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "150"
-         endingLineNumber = "150"
+         startingLineNumber = "194"
+         endingLineNumber = "194"
          landmarkName = "-updatePositions"
          landmarkType = "5">
       </FileBreakpoint>
@@ -68,9 +68,9 @@
          timestampString = "351949705.362976"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "162"
-         endingLineNumber = "162"
-         landmarkName = "-printPositions"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
+         landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -79,12 +79,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SliderGame/KKBoard.m"
-         timestampString = "351949705.362976"
+         timestampString = "352023470.590522"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "51"
-         endingLineNumber = "51"
-         landmarkName = "-initWithNibName:bundle:"
+         startingLineNumber = "142"
+         endingLineNumber = "142"
+         landmarkName = "-tap:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

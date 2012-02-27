@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "KKPiece.h"
 
+typedef enum
+{
+    LEFT = 1,
+    TOP,
+    RIGHT,
+    DOWN
+} direction;
+
 @interface KKBoard : UIViewController
 {
     NSMutableArray* pieceViews;
@@ -27,5 +35,7 @@
 - (NSMutableArray *) horizontalMovablePieces;
 - (void) printPositions;
 - (void) tap:(UITapGestureRecognizer *)sender;
+- (int) directionAvailableForMove:(UIImageView *) tile;
+- (void) moveTile:(UIImageView *) tile inDirection: (int) direction;
 
 @end

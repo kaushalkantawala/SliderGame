@@ -139,15 +139,59 @@ static int positions[16] = {-1};
 - (void) tap:(UITapGestureRecognizer *)sender
 {
     NSLog(@"Image View Tag: %d",sender.view.tag);
+    int directionFree = [self directionAvailableForMove:(UIImageView*)[sender view]];
+    NSLog(@"Open Spot is %d",directionFree);
+    if (directionFree != 0)
+        [self moveTile:(UIImageView*)[sender view] inDirection:directionFree];
+}
+
+- (int) directionAvailableForMove:(UIImageView *)tile
+{
+    int tileID = tile.tag;
+    int tileBoardPosition = ((KKPiece*)[pieces objectForKey:[NSString stringWithFormat:@"%d",tileID]]).boardPosition;
+    int emptyBoardPosition = ((KKPiece*)[pieces objectForKey:[NSString stringWithFormat:@"%d",16]]).boardPosition;
+    
+    switch (tileBoardPosition - emptyBoardPosition)
+    {
+        case 1: return LEFT;
+            
+        case 4: return TOP;
+            
+        case -1: return RIGHT;
+            
+        case -4: return DOWN;
+            
+        default: return 0;
+        
+    }
+    
+    
+}
+
+- (void) moveTile:(UIImageView *)tile inDirection:(int)direction
+{
+    KKPiece* piece = (KKPiece *)[pieces objectForKey:[NSString stringWithFormat:@"%d",tile.tag]];
+    int tilePosition = piece.boardPosition;
+    KKPiece* emptySlot = (KKPiece *)[pieces objectForKey:[NSString stringWithFormat:@"%d",16]];
+    int emptySlotPosition = emptySlot.boardPosition;
+    int i = tilePosition - 1;
+    int n = emptySlotPosition - 1;
+    UIImageView* blank = [pieceViews objectAtIndex:n];
+    tile.frame = CGRectMake((n%4 * 162), (n/4 * 162), 160, 160);
+    blank.frame = CGRectMake((i%4 * 162), (i/4 * 162), 160, 160);
+    [pieceViews exchangeObjectAtIndex:i withObjectAtIndex:n];
+    [pieceViews retain];
+    [self printPositions];
+    [self updatePositions];
 }
 
 - (void) updatePositions
 {
-    int i =0;
+    int i =1;
     for (UIImageView* pieceView in pieceViews)
     {
-        KKPiece* piece = [pieces objectForKey:[NSString stringWithFormat:@"%d",(i+1)]];
-        piece.boardPosition = pieceView.tag;
+        KKPiece* piece = [pieces objectForKey:[NSString stringWithFormat:@"%d",pieceView.tag]];
+        piece.boardPosition = i;
         NSLog(@"ID = %d   bP = %d", piece.ID, piece.boardPosition);
         i++;
     }
@@ -159,11 +203,11 @@ static int positions[16] = {-1};
     {
         NSLog(@"tag = %d", pieceView.tag);   
     }
-    for (id key in pieces)
-    {
-        KKPiece* piece = [pieces objectForKey:key];
-        NSLog(@"key = %@  ID = %d  boardPosition = %d",key, piece.ID, piece.boardPosition);
-    }
+//    for (id key in pieces)
+//    {
+//        KKPiece* piece = [pieces objectForKey:key];
+//        NSLog(@"key = %@  ID = %d  boardPosition = %d",key, piece.ID, piece.boardPosition);
+//    }
 }
 
 - (void)viewDidLoad
